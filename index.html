@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,23 +28,46 @@ function save(){
     document.getElementById("btnreg").innerHTML="save";
 }
 </script>
+<style>
+    #ram div{
+margin-bottom: 10px;
+    }
+</style>
 </head>
 <body class= "container-fluid">
-    <div id="regbtn" class="mt-3"> 
-    <button data-bs-target="#register" data-bs-toggle="modal"class="btn btn-primary"> Register product</button>
+    <div id="regbtn" class="mt-3 text-center">
+    <button  data-bs-target="#register" data-bs-toggle="modal"class="btn btn-primary "> Register product</button>
     </div>
-    <div  id="details"style="display:none">
+    <div  id="details"style="display:none" >
     <h3> Product Details</h3>
-    <dl>
-        <dt> Name</dt>
+   <!-- <dl>
+        <dt> <u>Name</u></dt>
         <dd id="name"></dd>
-        <dt>price</dt>
+        <dt><u>price</u></dt>
         <dd id="price"></dd>
-        <dt>  city</dt>
+        <dt> <u>city</u></dt>
         <dd id="city"></dd>
-        <dt> stock</dt>
+        <dt> <u>stock</u></dt>
         <dd id="stock"></dd>
-    </dl>
+    </dl>-->
+    <div id="ram">
+      <div >
+       <b> Name:</b>
+       <span id="name"></span>
+      </div>
+       <div>
+       <b> price:</b>
+       <span id="price"></span>
+      </div>
+       <div>
+       <b> City:</b>
+       <span id="city"></span>
+      </div>
+       <div>
+       <b> Stock:</b>
+       <span id="stock"></span>
+      </div>
+      </div>
       <div>
         <button  onclick="save()"data-bs-target="#register" data-bs-toggle="modal" class="btn btn-success"><span class="bi bi-pencil-square"></span> Edit</button>
     </div>
